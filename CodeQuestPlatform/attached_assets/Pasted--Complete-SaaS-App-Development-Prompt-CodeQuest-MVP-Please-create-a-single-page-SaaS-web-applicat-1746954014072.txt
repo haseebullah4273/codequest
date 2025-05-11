@@ -1,0 +1,118 @@
+✅ Complete SaaS App Development Prompt (CodeQuest MVP)
+Please create a single-page SaaS web application designed for beginner programmers who are learning to code. The app should integrate with the Together AI API (API key: 2a0d8526085339545a39b46805b35a8f9b92e3eb3758621951b1bcf296f02dac) to generate unique coding practice problems.
+
+🧩 Interface Features:
+A dropdown menu labeled “Language” with many options (e.g., Python, JavaScript, C++, Java, Ruby, Go, Rust, TypeScript, etc.).
+
+Display a set of coding topics relevant to the selected language (e.g., variables, loops, functions, classes, etc.) with checkboxes so users can select multiple topics.
+
+A difficulty selector with checkboxes (Easy, Medium, Hard) that filters question generation accordingly.
+
+An optional custom instruction box where the user can write anything they want the AI to consider when generating problems.
+
+A number input where the user specifies how many questions to generate.
+
+🎯 Functional Behavior:
+When the user clicks Generate, the app calls the Together AI API and generates problems that are:
+
+Contextually relevant to selected language, topics, and difficulty.
+
+Unique on each generation (no repetition).
+
+Include a complete, actual code solution, not a placeholder.
+
+Each problem appears in a styled card with:
+
+Problem title and description.
+
+A Hint button that:
+
+Reveals up to 5 progressive, specific hints, one at a time.
+
+A “Show Solution” button with a confirmation dialog:
+
+“Wait! Want to give it one more try? 💪”
+
+Buttons: “Okay, I’ll try” 🔋 and “No, Show me the solution” 😞
+
+On confirmation, show code solution with comments.
+
+🎨 UI and UX:
+Use modern styling with React or vanilla JavaScript:
+
+Clean, colorful interface with rounded corners.
+
+Color palette: Purple #6366f1, soft blues/greens, white background, dark readable text.
+
+During loading, show language-specific funny loading messages:
+
+Python: “Importing humor from future...”
+
+JavaScript: “Fixing semicolons before showing your challenge...”
+
+C++: “Avoiding segfaults while compiling brilliance...”
+
+📄 Landing Page Content (800+ Words):
+The page should function like a real product landing page, including:
+
+Introduction to the platform
+
+Why it's useful for new coders
+
+How it’s different from LeetCode/HackerRank
+
+Testimonials (fictional allowed)
+
+Explanation of how AI generates problems
+
+Roadmap or future plans
+
+Footer with links (GitHub, Twitter/X, Email)
+
+➕ Additional Lightweight Features for MVP:
+1. Save/Bookmark Feature:
+
+Each problem card has a “Save for Later” button. Store bookmarks in local storage.
+
+2. Dark Mode Toggle:
+
+Add a toggle for light/dark theme switching in the top-right corner.
+
+3. Local Progress Tracker:
+
+Display a progress bar like “You’ve completed 4 of 10 questions today!” (using local/session storage).
+
+4. Regenerate Button:
+
+Allow user to regenerate a new problem for the same topic/difficulty.
+
+5. Quick Tips Sidebar or Footer:
+
+Show language-based trivia like “In Python, range(5) = 0 to 4, not 1 to 5!”
+
+6. Mobile Responsiveness:
+
+Ensure clean layout and usability on smartphones and tablets.
+
+7. UI Language Toggle (for localization readiness):
+
+Optional dropdown to switch app UI language (English only for now).
+
+8. Feedback Button:
+
+Add a floating “Send Feedback” button that captures user notes (store locally or log to console).
+
+9. Surprise Me Button:
+
+Generates a random challenge with an animation, ignoring selected filters.
+
+10. Daily Practice Challenge:
+
+Auto-display one unique question each day with a motivational title like “Your Daily Brain Boost.”
+
+🔒 Notes:
+Do not expose API keys in the frontend.
+
+Do not include any user login or backend storage yet.
+
+Ensure every feature is performant without requiring user authentication.
